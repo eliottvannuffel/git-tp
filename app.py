@@ -1,3 +1,3 @@
 import logging
-userName = input("Enter your name: ")
+userName = "Eliott"
 print("Hello, " + userName + "!")
