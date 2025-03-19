@@ -1,0 +1,11 @@
+# ignore all .venv files
+*.venv
+
+# ignore __pycache__ directories
+__pycache__/
+
+# ignore .vscode directory
+.vscode/
+
+# ignore all log files
+*.log
