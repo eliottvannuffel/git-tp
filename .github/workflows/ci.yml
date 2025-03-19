@@ -1,0 +1,25 @@
+name: Run app.py on Push
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
+
+jobs:
+  run-app:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Specify the Python version you need
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # If you have dependencies
+
+    - name: Run app.py
+      run: python app.py
