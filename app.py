@@ -1,3 +1,6 @@
 import logging
+import pytest
 userName = "Eliott"
-print("Hello, " + userName + "!")
+assert "Hello, " + userName + "!" == "Hello, Eliott!"
+
+
